@@ -1,0 +1,14 @@
+image: python:3.11
+
+pipelines:
+  default:
+    - step:
+        name: Test frappe-decision-ladder hook
+        script:
+          - python3 -m unittest skills/frappe-decision-ladder/hooks/test_frappe_ladder_check.py -v
+  pull-requests:
+    '**':
+      - step:
+          name: Test frappe-decision-ladder hook
+          script:
+            - python3 -m unittest skills/frappe-decision-ladder/hooks/test_frappe_ladder_check.py -v

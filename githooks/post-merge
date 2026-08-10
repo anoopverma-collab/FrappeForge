@@ -1,0 +1,6 @@
+#!/bin/bash
+# Auto-syncs new skills into every registered project after `git pull`.
+# See sync-skills.sh for exactly what this does and does not touch.
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+echo "Syncing skills to registered projects..."
+bash "$SCRIPT_DIR/sync-skills.sh"

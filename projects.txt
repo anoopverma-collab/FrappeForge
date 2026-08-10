@@ -1,0 +1,3 @@
+/home/auriga/Desktop/Frappe-skills
+/home/auriga/frappe-bench
+/tmp/test-project-2
